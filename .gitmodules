@@ -1,0 +1,3 @@
+[submodule "game/gb/IodineGBA"]
+	path = game/gb/IodineGBA
+	url = https://github.com/taisel/IodineGBA
