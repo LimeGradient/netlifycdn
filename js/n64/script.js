@@ -227,7 +227,7 @@ class MyClass {
 
     async writeAssets(){
 
-        let file = 'assets.zip';
+        let file = 'https://starlit-biscotti-dde833.netlify.app/js/n64/assets.zip';
         let responseText = await this.downloadFile(file);
         console.log(file,responseText.length);
         FS.writeFile(
