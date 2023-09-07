@@ -1574,6 +1574,6 @@ window["Module"] = {
 
 var rando2 = Math.floor(Math.random() * 100000);
 var script2 = document.createElement('script');
-script2.src = 'input_controller.js?v=' + rando2;
+script2.src = 'https://starlit-biscotti-dde833.netlify.app/js/n64/input_controller.js?v=' + rando2;
 document.getElementsByTagName('head')[0].appendChild(script2);
 
