@@ -91,6 +91,27 @@ window.onload = function () {
     //Register GUI settings.
     registerGUISettings();
 }
+
+function downloadBIOS() {
+    downloadFile("https://starlit-biscotti-dde833.netlify.app/game/gba/gba_bios.bin", registerBIOS);
+}
+
+function registerBIOS() {
+    processDownload(this, attachBIOS);
+    console.log(location.hash.substring(1));
+    downloadROM(location.hash.substr(1));
+}
+
+function downloadROM(gamename) {
+    writeRedTemporaryText("Downloading \"" + gamename + ".\"");
+    downloadFile("https://starlit-biscotti-dde833.netlify.app/game/gba/" + gamename + ".gba", registerROM);
+}
+
+function registerROM() {
+    clearTempString();
+    processDownload(this, attachROM);
+}
+
 function registerIodineHandler() {
     try {
         /*
