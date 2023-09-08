@@ -98,6 +98,7 @@ function downloadBIOS() {
 
 function registerBIOS() {
     processDownload(this, attachBIOS);
+    console.log(location.hash.substring(1));
     downloadROM(location.hash.substr(1));
 }
 
