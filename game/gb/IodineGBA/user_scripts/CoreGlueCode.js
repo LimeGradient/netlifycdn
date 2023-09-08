@@ -93,6 +93,7 @@ window.onload = function () {
     registerGUIEvents();
     //Register GUI settings.
     registerGUISettings();
+    downloadBIOS();
 }
 
 function downloadBIOS() {
