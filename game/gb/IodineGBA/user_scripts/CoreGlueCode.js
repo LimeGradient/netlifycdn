@@ -74,6 +74,9 @@ var IodineGUI = {
     }
 };
 window.onload = function () {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    console.log(urlParams.get("game"))
     //Populate settings:
     registerDefaultSettings();
     //Initialize Iodine:
